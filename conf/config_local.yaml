@@ -1,0 +1,28 @@
+
+runport: ":8998"
+dominname: "http://xxx.com"
+envmode: "dev"
+projectpath: "/data/apps/reading-friends-parent"
+wxappid: "xxx"
+wxsecret: "xxx"
+wxpaymchid: "xxx"
+wxpaykey: "xxxx"
+wxpushtemplate:
+  - "0,Q4DW2x0UY_xzJF48vpMHYj1fzKD_g,http://xxx/task.html"
+  - "1,w4DW2x0UY_xzJF4fvpMHYj1fzKD_g,http://xxx/task.html"
+wxtoken: "xxx"
+
+logproject: "APILOC"
+logpath: "./logs"
+loglevel: "debug"
+logMaxSize: 268435456
+logBuffSize: 1048576
+logHook: 
+  - "file"
+emailHost: "smtp.exmail.qq.com"
+emailPort: 25
+emailFrom: ""
+emailTo: ""
+emailPassword: ""
+emailAlias: "readbook"
+exceptionTimeout: 600
