@@ -12,3 +12,15 @@ type BookInfo struct {
 	Icon         string   `json:"icon"`
 	BookCover    []string `json:"bookCover"`
 }
+
+type CatsDetail struct {
+	Picture []CatsList `json:"picture"`
+	Male    []CatsList `json:"male"`
+	Epub    []CatsList `json:"epub"`
+	FeMale  []CatsList `json:"female"`
+	Status  bool       `json:"ok"`
+}
+type CatsList struct {
+	Major string   `json:"major"`
+	Mins  []string `json:"mins"`
+}

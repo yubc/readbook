@@ -25,7 +25,7 @@ var (
 )
 
 type Data struct {
-	Ret        int                    `json:"ret,string"`
+	Ret        int                    `json:"ok,string"`
 	Msg        string                 `json:"msg"`
 	Data       map[string]interface{} `json:"-"`
 	ReturnData interface{}            `json:"data,omitempty"`

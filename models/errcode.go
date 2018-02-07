@@ -4,6 +4,9 @@ const (
 	Success   = 0
 	ErrorArgs = iota
 
+	ErrorNoData
+	ErrorJsonInvilid
+
 	ErrorWxServer
 	ErrorServer = -1
 )
@@ -11,6 +14,9 @@ const (
 var e = map[int]string{
 	Success:   "success",
 	ErrorArgs: "参数错误",
+
+	ErrorNoData:      "没有数据",
+	ErrorJsonInvilid: "无效的json数据",
 
 	ErrorWxServer: "读取微信数据错误",
 	ErrorServer:   "网络开小差了，一会儿再来试试吧~",
