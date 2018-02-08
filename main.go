@@ -13,9 +13,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var engine *gin.Engine
+var (
+	engine  *gin.Engine
+	Version string
+)
 
 func main() {
+	fmt.Println("start version:", Version)
 	engine = gin.Default()
 
 	inits.LoadInit()

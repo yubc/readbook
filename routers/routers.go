@@ -1,6 +1,7 @@
 package routers
 
 import (
+	"io/ioutil"
 	"path"
 	ctl "readbook/controllers"
 	"readbook/models"
@@ -52,6 +53,12 @@ func Router(router *gin.Engine) {
 
 		book.GET("/bookdetail", ctl.NewBookChapter) //获取最新章节
 
+		book.GET("/index", func(c *gin.Context) {
+			c.Header("Content-Type", "text/html; charset=utf-8")
+			v, _ := ioutil.ReadFile(path.Join(models.Conf.ProjectPath, "/static/index.html"))
+			c.String(200, string(v))
+		})
 	}
 	router.Static("/static", path.Join(models.Conf.ProjectPath, "static"))
+
 }

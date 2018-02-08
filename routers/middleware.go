@@ -12,6 +12,8 @@ import (
 var Fileter = []string{
 	"/readbook/wx",
 	"/readbook/oauth",
+	"/static",
+	"/index",
 }
 
 func CommonReturn(c *gin.Context) {
@@ -27,7 +29,6 @@ func CommonReturn(c *gin.Context) {
 	}
 
 	data := ctl.GetData(c)
-	// uri:=c.Request.URL.Path
 	if len(data.Msg) == 0 {
 		models.GetErrMsg(data, data.Ret)
 	}

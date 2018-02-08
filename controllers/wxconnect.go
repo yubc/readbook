@@ -79,7 +79,7 @@ func CreatMenu(c *gin.Context) {
     {
         "name": "进入阅读",
         "type": "view",
-        "url": "http://test.renrenmeishu.com/static/index.html"
+        "url": "http://test.renrenmeishu.com/readbook/index"
     }
     ]
   }`
